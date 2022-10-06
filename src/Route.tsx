@@ -1,5 +1,5 @@
 const Route = ({ path, component }: any) => {
-  return <div>Route</div>;
+  return <div>{component}</div>;
 };
 
 export default Route;

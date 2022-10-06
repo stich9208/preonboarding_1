@@ -1,7 +1,17 @@
-import React from "react";
+import { useRouter } from "./hooks/useRouter";
 
 const Root = () => {
-  return <div>Root</div>;
+  const { push } = useRouter();
+
+  const onClickGoAbout = () => {
+    push("/about");
+  };
+  return (
+    <div>
+      <span>root</span>
+      <button onClick={onClickGoAbout}>about</button>
+    </div>
+  );
 };
 
 export default Root;

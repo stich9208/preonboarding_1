@@ -1,6 +1,11 @@
+import { useRouter } from "./hooks/useRouter";
+
 const Router = ({ children }: any) => {
-  console.log(children);
-  return <div>Router</div>;
+  const { path } = useRouter();
+
+  return (
+    <div>{children.filter((child: any) => child.props.path === path)[0]}</div>
+  );
 };
 
 export default Router;
