@@ -1,6 +1,9 @@
 import { useRouter } from "./hooks/useRouter";
 
-const Router = ({ children }: any) => {
+//interface
+import { RouterInterface, RouteInterface } from "./interface/component";
+
+const Router = ({ children }: RouterInterface) => {
   const { path } = useRouter();
 
   return (

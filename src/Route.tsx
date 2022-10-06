@@ -1,4 +1,7 @@
-const Route = ({ path, component }: any) => {
+//interface
+import { RouteInterface } from "./interface/component";
+
+const Route = ({ component }: RouteInterface) => {
   return <div>{component}</div>;
 };
 
